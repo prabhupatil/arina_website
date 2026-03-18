@@ -125,21 +125,21 @@ body {
 }
 
 .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 24px;
-    background: linear-gradient(90deg, #36c5f3, #0066ff);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-family: var(--font-body);
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    box-shadow: 0 0 20px rgba(79, 123, 247, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: linear-gradient(90deg, #36c5f3, #0066ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(79, 123, 247, 0.2);
 }
 
 .btn-primary:hover {
@@ -504,7 +504,7 @@ body {
 
 /* ── SECTION COMMON ── */
 .section1 {
-      padding: 60px 48px 20px;
+  padding: 60px 48px 20px;
   position: relative;
 }
 
@@ -529,7 +529,7 @@ body {
 
 .section-desc {
   font-size: 16px;
-color: var(--text-secondary);
+  color: var(--text-secondary);
   max-width: 640px;
   line-height: 1.7;
 }
@@ -539,7 +539,7 @@ color: var(--text-secondary);
   display: flex;
   flex-direction: column;
   align-items: center;
-     padding: 60px 48px 100px;
+  padding: 60px 48px 100px;
   position: relative;
 }
 
@@ -888,7 +888,7 @@ color: var(--text-secondary);
 /* ── ABOUT PAGE ── */
 .about-hero {
   padding: 160px 48px 80px;
-  height:600px ;
+  height: 600px;
   text-align: center;
   background: linear-gradient(to bottom, #020a3a 20%, #0a1f7a 50%, #1a33c8 100%);
 }
@@ -970,7 +970,7 @@ color: var(--text-secondary);
   border-radius: 20px;
   padding: 50px;
   text-align: center;
-   border: 2px solid transparent;
+  border: 2px solid transparent;
 }
 
 .value-card:hover {
@@ -985,9 +985,9 @@ color: var(--text-secondary);
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 10px;
-      background: linear-gradient(90deg, #0066ff, #36c5f3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #0066ff, #36c5f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .value-card p {
@@ -1204,19 +1204,22 @@ color: var(--text-secondary);
   .about-hero {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom:500px;
+    padding-bottom: 500px;
   }
- .about-hero{height: 700px;}
- 
+
+  .about-hero {
+    height: 700px;
+  }
+
   .hero h1 {
     letter-spacing: 1px;
     font-size: 20px;
   }
-  
+
   .section1 {
     padding: 60px 10px 20px;
     position: relative;
-}
+  }
 
   .features-grid,
   .values-grid {
@@ -1575,7 +1578,7 @@ color: var(--text-secondary);
   color: #fff;
   line-height: 1.7;
   max-width: auto;
-  
+
 }
 
 .platform-ops-list {
@@ -1585,58 +1588,67 @@ color: var(--text-secondary);
 }
 
 
-  @media(max-width:900px){
+@media(max-width:900px) {
 
-   .platform-banner{
-     display: block;
-}
-.platform-banner h3 {
- 
+  .platform-banner {
+    display: block;
+  }
+
+  .platform-banner h3 {
+
     text-align: center;
 
-    
-}
+
   }
+}
 
 
 @media (max-width: 768px) {
 
-   .platform-banner{
-     display: block;
-}
- 
+  .platform-banner {
+    display: block;
+  }
+
+  .platform-banner h2 {
+    font-size: 28px;
+
+  }
+
 }
 
 /* Large Mobile */
 @media (max-width: 576px) {
-     .platform-ops-list {
+  .platform-ops-list {
     display: block;
-    
-   }
+
+  }
 }
 
 /* Small Mobile (iPhone SE etc.) */
 @media (max-width: 480px) {
- .platform-ops-list {
+  .platform-ops-list {
     display: block;
-    
-   }
- .platform-banner {
-  padding:20px 20px;
+    padding-top: 18px !important;
+
   }
-    
+
+  .platform-banner {
+    padding: 20px 20px;
+  }
+
 }
 
 /* Extra Small Mobile */
 @media (max-width: 360px) {
-     .platform-ops-list {
+  .platform-ops-list {
     display: block;
-    
-   }
+    padding-top: 18px !important;
+
+  }
 }
 
-    
-    
+
+
 .platform-ops-item {
   display: flex;
   align-items: center;
@@ -1721,13 +1733,20 @@ color: var(--text-secondary);
 
 
 /* Large Mobile */
-@media (max-width: 576px) {
-}
+@media (max-width: 576px) {}
 
 /* Small Mobile (iPhone SE etc.) */
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
 
 /* Extra Small Mobile */
-@media (max-width: 360px) {
+@media (max-width: 360px) {}
+
+@media (max-width: 768px) {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 110% !important;
+  }
 }

@@ -125,21 +125,21 @@ body {
 }
 
 .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 24px;
-    background: linear-gradient(90deg, #36c5f3, #0066ff);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-family: var(--font-body);
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    box-shadow: 0 0 20px rgba(79, 123, 247, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: linear-gradient(90deg, #36c5f3, #0066ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(79, 123, 247, 0.2);
 }
 
 .btn-primary:hover {
@@ -529,7 +529,7 @@ body {
 
 .section-desc {
   font-size: 16px;
-color: var(--text-secondary);
+  color: var(--text-secondary);
   max-width: 640px;
   line-height: 1.7;
 }
@@ -833,9 +833,9 @@ color: var(--text-secondary);
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-    height: 40px;
+  height: 40px;
   width: auto;
- 
+
 }
 
 .filter-btn:hover {
@@ -852,7 +852,7 @@ color: var(--text-secondary);
 
 .filter-btn.active {
   background: linear-gradient(90deg, #36c5f3, #0066ff);
-  border-color:black;
+  border-color: black;
   color: white;
 }
 
@@ -875,7 +875,7 @@ color: var(--text-secondary);
 }
 
 .integration-card:hover {
-      border: 2px solid #0066ff;
+  border: 2px solid #0066ff;
 }
 
 .integration-card .icon {
@@ -887,14 +887,14 @@ color: var(--text-secondary);
   font-weight: 600;
   font-size: 16px;
   margin-bottom: 4px;
-      padding-top: 20px;
+  padding-top: 20px;
 }
 
 .integration-card .cat {
   font-size: 14px;
   background: linear-gradient(90deg, #0066ff, #36c5f3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: var(--font-mono);
 }
 
@@ -904,7 +904,7 @@ color: var(--text-secondary);
   text-align: center;
   height: 600px;
   background: linear-gradient(to bottom, #020a3a 20%, #0a1f7a 50%, #1a33c8 100%);
-  
+
 }
 
 .team-grid {
@@ -1165,7 +1165,7 @@ color: var(--text-secondary);
   .features-grid,
   .integrations-grid,
   .team-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .stats-row {
@@ -1200,10 +1200,12 @@ color: var(--text-secondary);
   .about-hero {
     padding-left: 20px;
     padding-right: 20px;
-    
+
   }
-  
-  .about-hero{height: 650px;}
+
+  .about-hero {
+    height: 650px;
+  }
 
   .hero h1 {
     letter-spacing: 1px;
@@ -1223,8 +1225,12 @@ color: var(--text-secondary);
     grid-template-columns: 1fr;
   }
 
+  .integration-card {
+    padding: 15px;
+  }
+
   .integrations-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .team-grid {
@@ -1552,13 +1558,13 @@ color: var(--text-secondary);
 
 /* background: var(--accent-gradient);
 } */
-.platform-banner h3 {
+.platform-banner h2 {
   font-family: var(--font-display);
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 12px;
- 
+
 }
 
 .platform-banner p {
@@ -1566,7 +1572,7 @@ color: var(--text-secondary);
   color: #fff;
   line-height: 1.7;
   max-width: auto;
-  
+
 }
 
 .platform-ops-list {
@@ -1593,62 +1599,67 @@ color: var(--text-secondary);
 }
 
 
-  @media(max-width:900px){
+@media(max-width:900px) {
 
-   .platform-banner{
-     display: block;
-}
-.platform-banner h3 {
- 
-    text-align: center;
-font-size: 16px;
-    
-}
-
-.platform-banner p{
-    font-size: 14px;
-}
-
-.platform-ops-item{
-    font-size: 14px;
-}
+  .platform-banner {
+    display: block;
   }
+
+  .platform-banner h2 {
+
+    text-align: center;
+    font-size: 28px;
+    line-height: 1.15;
+
+  }
+
+  .platform-banner p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .platform-ops-item {
+    font-size: 14px;
+  }
+}
 
 
 @media (max-width: 768px) {
 
-   .platform-banner{
-     display: block;
-}
- 
+  .platform-banner {
+    display: block;
+  }
+
 }
 
 /* Large Mobile */
 @media (max-width: 576px) {
-     .platform-ops-list {
+  .platform-ops-list {
     display: block;
-    
-   }
+
+  }
 }
 
 /* Small Mobile (iPhone SE etc.) */
 @media (max-width: 480px) {
- .platform-ops-list {
+  .platform-ops-list {
     display: block;
-    
-   }
- .platform-banner {
-  padding:20px 20px;
+
   }
-    
+
+  .platform-banner {
+    padding: 20px 20px;
+  }
+
 }
 
 /* Extra Small Mobile */
 @media (max-width: 360px) {
-     .platform-ops-list {
+  .platform-ops-list {
     display: block;
-    
-   }
+    padding-top: 18px !important;
+
+  }
 }
 
 
@@ -1745,8 +1756,15 @@ font-size: 16px;
     width: 120px;
     font-size: 10px;
   }
- 
+
 }
 
+@media (max-width: 768px) {
 
-
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 110% !important;
+  }
+}

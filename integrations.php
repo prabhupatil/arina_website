@@ -326,7 +326,7 @@
       <div class="platform-banner">
         
         <div>
-          <h3>Cross-Domain Signals, <br>Cross-Domain Intelligence</h3>
+          <h2>Cross-Domain Signals, <br>Cross-Domain Intelligence</h2>
           <p>When your SRE tools, NOC alerts, security scanners, data platforms, and ITSM systems all feed into one AI platform, Arina can see patterns that siloed tools never will. A security patch that causes a data pipeline failure that triggers an SRE alert: Arina connects all three in seconds.</p>
         </div>
          <div class="platform-ops-list">

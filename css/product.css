@@ -535,8 +535,8 @@ body {
     line-height: 1.7;
 }
 
-#text{
-    font-size:18px;
+#text {
+    font-size: 18px;
 }
 
 .section-center {
@@ -1794,8 +1794,8 @@ body {
     margin: 0px 0;
 }
 
-.section-title h1{
-    font-size:46px !important;
+.section-title h1 {
+    font-size: 46px !important;
 }
 
 .section-header p {
@@ -1983,28 +1983,31 @@ body {
     .use-cases-section .left h2 {
         font-size: 16px;
     }
-.use-cases-section .left p
 
- {
-font-size: 14px;   
-}
+    .use-cases-section .left p {
+        font-size: 14px;
+    }
 
-.section-title {
-     font-size: 28px;
-}
+    .section-title {
+        font-size: 28px;
+    }
 
-.perf-answer {
-     font-size: 14px !important;
-}
-.perf-answer-list li{
-     font-size: 14px !important;
-}
-.feature-card{
-     font-size: 16px !important;
-}
-.feature-card p{
-     font-size: 14px !important;
-}
+    .perf-answer {
+        font-size: 14px !important;
+    }
+
+    .perf-answer-list li {
+        font-size: 14px !important;
+    }
+
+    .feature-card {
+        font-size: 16px !important;
+    }
+
+    .feature-card p {
+        font-size: 14px !important;
+    }
+
     .use-cases-section .card {
         padding: 35px 25px;
         width: auto;
@@ -2025,10 +2028,10 @@ font-size: 14px;
     }
 
     .use-cases-section .left p {
-        width: auto
+        width: auto;
         font-size: 14px;
     }
-    
+
     .use-cases-section .left ul li {
         font-size: 14px;
     }
@@ -2565,14 +2568,97 @@ font-size: 14px;
         display: flex;
         flex-direction: column-reverse;
     }
+
     .right {
         position: static !important;
         top: auto !important;
     }
-    
-    
+
+
     .perf-tabs-menu {
- 
-    margin-top: -100px;
+
+        margin-top: -100px;
+    }
 }
+
+/* Layout */
+.perf-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .perf-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hide all panes by default */
+.perf-pane {
+    display: none;
+}
+
+/* ================= DESKTOP ================= */
+
+/* Show only active right-side pane */
+.desktop-active-tabs.active {
+    display: block;
+}
+
+/* Hide mobile accordion in desktop */
+.mobile-active-tabs {
+    display: none !important;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* Hide right-side content */
+    .desktop-active-tabs {
+        display: none !important;
+    }
+
+    /* Show accordion content only for active tab */
+    .perf-item.active .mobile-active-tabs {
+        display: block !important;
+    }
+
+}
+
+.mobile-active-tabs {
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .tabs-responsive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px !important;
+        padding-left: initial !important;
+        padding: 10px !important;
+
+    }
+
+    .tabs-responsive .tab {
+        white-space: wrap;
+        line-height: 13px;
+    }
+
+    .one-platform-heading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 110% !important;
+    }
 }

@@ -7,8 +7,7 @@
   <title>Platform | Arina AI</title>
   <link rel="stylesheet" href="css/product.css">
   <link rel="shortcut icon" href="logo/ARINA _favicon.png" type="image/x-icon">
- <style>
-  
+  <style>
     /* =========================
    HERO WRAPPER
 ========================= */
@@ -44,7 +43,7 @@
 ========================= */
 
     .smart-cta-title {
-      font-size: clamp(36px, 6vw,62px);
+      font-size: clamp(36px, 6vw, 62px);
       font-weight: 600;
       line-height: 1.1;
       margin-bottom: 30px;
@@ -78,7 +77,7 @@
       font-family: var(--font-body);
       font-size: 18px;
       font-weight: 600;
-          height: 50px;
+      height: 50px;
       cursor: pointer;
       transition: all 0.3s ease;
       text-decoration: none;
@@ -113,7 +112,8 @@
       }
 
     }
-/* Badge */
+
+    /* Badge */
     .badge {
       display: inline-flex;
       align-items: center;
@@ -123,7 +123,7 @@
       color: white;
       border-radius: 30px;
       font-size: 20px;
-     
+
       backdrop-filter: blur(10px);
     }
 
@@ -139,106 +139,113 @@
       font-size: 12px;
     }
 
-.help-section{
+    .help-section {
 
-padding:100px 20px;
-color:#fff;
-}
+      padding: 100px 20px;
+      color: #fff;
+    }
 
-.help-header{
-text-align:center;
-margin-bottom:60px;
-}
+    .help-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
 
-.help-tag{
-color:#5b7cff;
-letter-spacing:2px;
-display:block;
-margin-bottom:10px;
-}
+    .help-tag {
+      color: #5b7cff;
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 10px;
+    }
 
-.help-title{
-font-size:60px;
-font-weight:700;
-}
+    .help-title {
+      font-size: 60px;
+      font-weight: 700;
+    }
 
-.help-wrapper{
-max-width:900px;
-margin:auto;
-}
+    .help-wrapper {
+      max-width: 900px;
+      margin: auto;
+    }
 
-.help-box{
-border-bottom:1px solid rgba(255,255,255,0.1);
-padding:20px 0;
-cursor:pointer;
-}
-.help-box:hover{
-border-bottom: 2px solid #0066ff;
-}
+    .help-box {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px 0;
+      cursor: pointer;
+    }
 
-.help-question{
-display:flex;
-justify-content:space-between;
-align-items:center;
-font-size:20px;
-font-weight:500;
-}
+    .help-box:hover {
+      border-bottom: 2px solid #0066ff;
+    }
 
-.help-symbol{
-font-size:26px;
-color:#6f8cff;
-}
+    .help-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 500;
+    }
 
-.help-content{
-max-height:0;
-overflow:hidden;
-opacity:0;
-transition:all .4s ease;
-color: var(--text-secondary);
-line-height:1.7;
-margin-top:10px;
-}
+    .help-symbol {
+      font-size: 26px;
+      color: #6f8cff;
+    }
 
-.help-box.open .help-content{
-max-height:200px;
-opacity:1;
-}
+    .help-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all .4s ease;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-top: 10px;
+    }
 
-#coretext{
-display: contents;
-    
-}
+    .help-box.open .help-content {
+      max-height: 200px;
+      opacity: 1;
+    }
 
-#section-title{
-    font-size: 62px;
-}
+    #coretext {
+      display: contents;
 
-@media (max-width: 900px) {
-  #section-title{
-    font-size: 36px;
-}
-    .section-desc {
-    font-size: 14px;
-    
-}
-#text {
-    font-size: 16px;
-}
-}
- </style>
+    }
+
+    #section-title {
+      font-size: 62px;
+    }
+
+    @media (max-width: 900px) {
+      #section-title {
+        font-size: 36px;
+      }
+
+      .section-desc {
+        font-size: 14px;
+
+      }
+
+      #text {
+        font-size: 16px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<?php include 'menu.php';?>
+  <?php include 'menu.php'; ?>
   <main>
 
-    <section class="about-hero"style="height:600px" >
+    <section class="about-hero" style="height:600px">
       <!-- <span class="section-label">Platform</span> -->
-      <h1 class="section-title"  id="section-title" style="max-width:800px;margin:0 auto 40px;margin-top: 80px !important;  ">One Agentic AI Platform for Every TechOps Team</h1>
-      <p class="section-desc" style="margin:0 auto">Arina isn't a point solution. Our unified platform adapts and integrates with workflows, signals, and priorities across all techops.<br><br><b id="text">Autonomous ops. Any stack. Your environment.
+      <h1 class="section-title" id="section-title"
+        style="max-width:800px;margin:0 auto 40px;margin-top: 80px !important;  ">One Agentic AI Platform for Every
+        TechOps Team</h1>
+      <p class="section-desc" style="margin:0 auto">Arina isn't a point solution. Our unified platform adapts and
+        integrates with workflows, signals, and priorities across all techops.<br><br><b id="text">Autonomous ops. Any
+          stack. Your environment.
         </b> </p>
       <!-- <div class="hero-ops-pills" style="margin-top:28px;margin-bottom:0"><span class="ops-pill" style="border-color:#4F7BF740;color:#4F7BF7">⚡ SRE</span><span class="ops-pill" style="border-color:#22C55E40;color:#22C55E">📡 NOC</span><span class="ops-pill" style="border-color:#F59E0B40;color:#F59E0B">🔒 DevSecOps</span><span class="ops-pill" style="border-color:#A855F740;color:#A855F7">🗄️ DataOps</span><span class="ops-pill" style="border-color:#EC489940;color:#EC4899">🖥️ ITOps</span><span class="ops-pill" style="border-color:#06B6D440;color:#06B6D4">🏗️ Platform Eng.</span></div> -->
-       <br><br>
+      <br><br>
 
       <!-- <div class="tabs newtabs" id="tabs-product"></div> -->
     </section>
@@ -248,11 +255,12 @@ display: contents;
 
       <div class="section-header">
         <span class="badge"><span>›</span> USE CASES</span>
-        <h1>One Platform, Purpose-Built for Every Ops Team</h1>
-        <p class="section-desc">Arina is the first vendor-agnostic agentic Ops intelligence platform delivering the operational outcomes your tools always promised but never delivered.</p>
+        <h2 class="one-platform-heading">One Platform, Purpose-Built for Every Ops Team</h2>
+        <p class="section-desc">Arina is the first vendor-agnostic agentic Ops intelligence platform delivering the
+          operational outcomes your tools always promised but never delivered.</p>
       </div>
 
-      <div class="tabs newtabs" id="tabs-product"></div>
+      <div class="tabs newtabs tabs-responsive" id="tabs-product"></div>
 
       <div class="content-wrapper concenter">
 
@@ -280,12 +288,13 @@ display: contents;
     </section>
 
     <!-- CORE ENGINE -->
-    <section class="section" >
+    <section class="section">
       <div class="section-center">
-         <span class="badge"><span>›</span> CORE ENGINE</span>
+        <span class="badge"><span>›</span> CORE ENGINE</span>
         <!-- <span class="section-label">Core Engine</span> -->
         <h1 class="section-title ">The Intelligence Layer Behind Every Ops Team</h1>
-        <p class="section-desc" id="coretext">Three core engines power detection, investigation, and remediation, drawing from a unified knowledge graph spanning your tech estate.</p>
+        <p class="section-desc" id="coretext">Three core engines power detection, investigation, and remediation,
+          drawing from a unified knowledge graph spanning your tech estate.</p>
       </div>
 
       <!-- Detection -->
@@ -431,12 +440,50 @@ display: contents;
                             <span style="color:rgba(240,241,245,0.6);font-size:12px;">Alert Noise Reduced</span>
                         </div> -->
               </div>
+              <div class="perf-pane active mobile-active-tabs" data-pane="1">
+                <div class="terminal-card">
+                  <div
+                    style="position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(79,123,247,0.12),transparent 70%);pointer-events:none;">
+                  </div>
+                  <!-- <div class="terminal-topbar">
+                  <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                  <span class="terminal-title">arina — detection-engine</span>
+                </div> -->
+                  <div class="terminal-body">
+                    <div><span class="t-h" style="color: var(--accent-1);">UNIFIED INGEST</span> <span
+                        class="t-d">──────────────────────</span>
+                    </div>
+                    <div>│ <span class="t-a">SRE</span> → Metrics, Logs, Traces</div>
+                    <div>│ <span class="t-a">NOC</span> → Alerts, SNMP, Syslog</div>
+                    <div>│ <span class="t-a">SecOps</span> → CVEs, WAF, Audit Logs</div>
+                    <div>│ <span class="t-a">DataOps</span>→ Pipeline Health, Schema Drift</div>
+                    <div>│ <span class="t-a">ITOps</span> → Tickets, CMDB, Change Records</div>
+                    <div><span class="t-h" style="color: var(--accent-1);">ANALYZE</span> <span
+                        class="t-d">─────────────────────────────</span>
+                    </div>
+                    <div>│ Cross-Domain Correlation <span class="t-s">✓</span></div>
+                    <div>│ Contextual Baselines <span class="t-s">✓</span></div>
+                    <div>│ Noise Reduction: <span class="t-s" style="font-weight:700;">87% fewer alerts</span>
+                    </div>
+                    <div><span class="t-h" style="color: var(--accent-1);">OUTPUT</span> <span
+                        class="t-d">──────────────────────────────</span>
+                    </div>
+                    <div>│ → <span class="t-s" style="font-weight:700;">Unified Incident Created</span></div>
+                    <div>│ → Routed to correct ops team</div>
+                  </div>
+                  <!-- <div class="terminal-statusbar"
+                  style="background:rgba(34,197,94,0.05);border-top-color:rgba(34,197,94,0.12);color:#22C55E;">
+                  <span class="status-dot" style="background:#22C55E;box-shadow:0 0 6px #22C55E;"></span>
+                  Detection active · 14 sources monitored · 0 false positives
+                </div> -->
+                </div>
+              </div>
             </div>
 
             <!-- ── ITEM 2: Investigation Engine ── -->
             <div class="perf-item" data-tab="2" data-color="purple">
               <div class="perf-question-flex">
-                <div class="perf-question"style="-webkit-text-fill-color: transparent;
+                <div class="perf-question" style="-webkit-text-fill-color: transparent;
     font-size: 16px;
     margin-bottom: 20px;
     background: linear-gradient(90deg, rgb(0, 102, 255), rgb(54, 197, 243)) text;">Investigation Engine</div>
@@ -454,13 +501,13 @@ display: contents;
                       style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>Automated
                     correlation across 30+ data source types</li>
                   <li><span class="check"
-                     style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>Change-aware
+                      style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>Change-aware
                     analysis linking incidents to deployments, config changes, and patches</li>
                   <li><span class="check"
                       style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>Blast
                     radius assessment across services, pipelines, and dependent systems</li>
                   <li><span class="check"
-                     style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>94%
+                      style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>94%
                     root cause accuracy with automated confidence scoring</li>
                 </ul>
                 <!-- <div class="perf-stat"
@@ -470,15 +517,51 @@ display: contents;
                             <span style="color:rgba(240,241,245,0.6);font-size:12px;">Root Cause Accuracy</span>
                         </div> -->
               </div>
+              <div class="perf-pane mobile-active-tabs" data-pane="2">
+                <div class="terminal-card">
+                  <div
+                    style="position:absolute;bottom:-60px;left:-60px;width:280px;height:280px;background:radial-gradient(circle,rgba(123,92,245,0.12),transparent 70%);pointer-events:none;">
+                  </div>
+                  <!-- <div class="terminal-topbar">
+                  <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                  <span class="terminal-title">arina — investigation-engine</span>
+                </div> -->
+                  <div class="terminal-body">
+                    <div><span class="t-ph" style="color: var(--accent-1);">INCIDENT</span> #4821 <span
+                        class="t-d">───────────────────</span>
+                    </div>
+                    <div>│ <span class="t-a">Signal:</span> P99 latency &gt; 2s (payments)</div>
+                    <div>│</div>
+                    <div>│ <span class="t-ph" style="color: var(--accent-1);">CROSS-DOMAIN INVESTIGATION</span> <span
+                        class="t-d">──</span>
+                    </div>
+                    <div>│ ├─ <span class="t-b">SRE:</span> CPU spike on payments-*</div>
+                    <div>│ ├─ <span class="t-b">Code:</span> Deploy #782 merged 12m ago</div>
+                    <div>│ ├─ <span class="t-b">Sec:</span> No new CVE exposure</div>
+                    <div>│ ├─ <span class="t-b">Data:</span> Downstream ETL unaffected</div>
+                    <div>│ └─ <span class="t-b">ITSM:</span> Related to CHG-0045891</div>
+                    <div>│</div>
+                    <div>│ <span class="t-s" style="font-weight:700;">ROOT CAUSE IDENTIFIED</span></div>
+                    <div>│ Deploy #782 → N+1 query → OOM</div>
+                    <div>│ Confidence: <span class="t-s" style="font-weight:800;">94%</span></div>
+                  </div>
+                  <!-- <div class="terminal-statusbar"
+                  style="background:rgba(123,92,245,0.06);border-top-color:rgba(123,92,245,0.15);color:#7B5CF5;">
+                  <span class="status-dot" style="background:#7B5CF5;box-shadow:0 0 6px #7B5CF5;"></span>
+                  Investigation complete · 2m 14s · 30 sources correlated
+                </div> -->
+                </div>
+              </div>
             </div>
 
             <!-- ── ITEM 3: Remediation Engine ── -->
             <div class="perf-item" data-tab="3" data-color="green">
               <div class="perf-question-flex">
                 <div class="perf-question" style="-webkit-text-fill-color: transparent;
-    font-size: 16px;
-    margin-bottom: 20px;
-    background: linear-gradient(90deg, rgb(0, 102, 255), rgb(54, 197, 243)) text;">Remediation Engine</div>
+                                     font-size: 16px;
+                               margin-bottom: 20px;
+                      background: linear-gradient(90deg, rgb(0, 102, 255), rgb(54, 197, 243)) text;">Remediation Engine
+                </div>
                 <svg class="perf-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                   stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
@@ -493,10 +576,10 @@ display: contents;
                       style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>Domain-specific
                     remediation with configurable approval gates</li>
                   <li><span class="check"
-                     style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>SRE:
+                      style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>SRE:
                     rollbacks, scaling, config changes with full audit trail</li>
                   <li><span class="check"
-                     style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>NOC:
+                      style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>NOC:
                     automated escalation routing and L1 resolution guidance</li>
                   <li><span class="check"
                       style="background:rgba(79,123,247,0.15);border:1px solid rgba(79,123,247,0.3);color: var(--accent-1);">✓</span>DevSecOps:
@@ -512,6 +595,40 @@ display: contents;
                             <span style="color:rgba(240,241,245,0.6);font-size:12px;">MTTR Reduction</span>
                         </div> -->
               </div>
+              <div class="perf-pane mobile-active-tabs" data-pane="3">
+                <div class="terminal-card">
+                  <div
+                    style="position:absolute;top:-60px;right:-60px;width:280px;height:280px;background:radial-gradient(circle,rgba(34,197,94,0.1),transparent 70%);pointer-events:none;">
+                  </div>
+                  <!-- <div class="terminal-topbar">
+                  <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+                  <span class="terminal-title">arina — remediation-engine</span>
+                </div> -->
+                  <div class="terminal-body">
+                    <div><span class="t-gh" style="color: var(--accent-1);">REMEDIATION ENGINE</span> <span
+                        class="t-d">─────────────</span>
+                    </div>
+                    <div>│</div>
+                    <div>│ <span class="t-a">SRE:</span> Rollback deploy #782</div>
+                    <div>│ <span class="t-s">✓ Approved &amp; executed</span></div>
+                    <div>│ <span class="t-a">NOC:</span> Alert suppressed, status updated</div>
+                    <div>│ <span class="t-s">✓ Auto-resolved</span></div>
+                    <div>│ <span class="t-a">ITSM:</span> INC-9921 closed, CHG linked</div>
+                    <div>│ <span class="t-s">✓ Auto-closed</span></div>
+                    <div>│</div>
+                    <div>│ <span class="t-h" style="font-weight:700; color: var(--accent-1);">POST-INCIDENT</span> <span
+                        class="t-d">──────────────────</span></div>
+                    <div>│ Cross-domain timeline <span class="t-s">✓</span></div>
+                    <div>│ Runbooks updated <span class="t-s">✓</span></div>
+                    <div>│ Knowledge graph enriched <span class="t-s">✓</span></div>
+                  </div>
+                  <!-- <div class="terminal-statusbar"
+                  style="background:rgba(34,197,94,0.05);border-top-color:rgba(34,197,94,0.12);color:#22C55E;">
+                  <span class="status-dot" style="background:#22C55E;box-shadow:0 0 6px #22C55E;"></span>
+                  Resolved · 2m 14s total · NOC notified · ticket closed
+                </div> -->
+                </div>
+              </div>
             </div>
 
           </div><!-- /perf-tabs-menu -->
@@ -520,7 +637,7 @@ display: contents;
           <div class="perf-tabs-content" id="tabContent">
 
             <!-- Pane 1: Detection -->
-            <div class="perf-pane active" data-pane="1">
+            <div class="perf-pane active desktop-active-tabs" data-pane="1">
               <div class="terminal-card">
                 <div
                   style="position:absolute;top:-80px;right:-80px;width:300px;height:300px;background:radial-gradient(circle,rgba(79,123,247,0.12),transparent 70%);pointer-events:none;">
@@ -530,20 +647,23 @@ display: contents;
                   <span class="terminal-title">arina — detection-engine</span>
                 </div> -->
                 <div class="terminal-body">
-                  <div><span class="t-h" style="color: var(--accent-1);">UNIFIED INGEST</span> <span class="t-d">──────────────────────</span>
+                  <div><span class="t-h" style="color: var(--accent-1);">UNIFIED INGEST</span> <span
+                      class="t-d">──────────────────────</span>
                   </div>
                   <div>│ <span class="t-a">SRE</span> → Metrics, Logs, Traces</div>
                   <div>│ <span class="t-a">NOC</span> → Alerts, SNMP, Syslog</div>
                   <div>│ <span class="t-a">SecOps</span> → CVEs, WAF, Audit Logs</div>
                   <div>│ <span class="t-a">DataOps</span>→ Pipeline Health, Schema Drift</div>
                   <div>│ <span class="t-a">ITOps</span> → Tickets, CMDB, Change Records</div>
-                  <div><span class="t-h" style="color: var(--accent-1);">ANALYZE</span> <span class="t-d">─────────────────────────────</span>
+                  <div><span class="t-h" style="color: var(--accent-1);">ANALYZE</span> <span
+                      class="t-d">─────────────────────────────</span>
                   </div>
                   <div>│ Cross-Domain Correlation <span class="t-s">✓</span></div>
                   <div>│ Contextual Baselines <span class="t-s">✓</span></div>
                   <div>│ Noise Reduction: <span class="t-s" style="font-weight:700;">87% fewer alerts</span>
                   </div>
-                  <div><span class="t-h"style="color: var(--accent-1);">OUTPUT</span> <span class="t-d">──────────────────────────────</span>
+                  <div><span class="t-h" style="color: var(--accent-1);">OUTPUT</span> <span
+                      class="t-d">──────────────────────────────</span>
                   </div>
                   <div>│ → <span class="t-s" style="font-weight:700;">Unified Incident Created</span></div>
                   <div>│ → Routed to correct ops team</div>
@@ -557,7 +677,7 @@ display: contents;
             </div>
 
             <!-- Pane 2: Investigation -->
-            <div class="perf-pane" data-pane="2">
+            <div class="perf-pane desktop-active-tabs" data-pane="2">
               <div class="terminal-card">
                 <div
                   style="position:absolute;bottom:-60px;left:-60px;width:280px;height:280px;background:radial-gradient(circle,rgba(123,92,245,0.12),transparent 70%);pointer-events:none;">
@@ -567,11 +687,13 @@ display: contents;
                   <span class="terminal-title">arina — investigation-engine</span>
                 </div> -->
                 <div class="terminal-body">
-                  <div><span class="t-ph"style="color: var(--accent-1);">INCIDENT</span> #4821 <span class="t-d">───────────────────</span>
+                  <div><span class="t-ph" style="color: var(--accent-1);">INCIDENT</span> #4821 <span
+                      class="t-d">───────────────────</span>
                   </div>
                   <div>│ <span class="t-a">Signal:</span> P99 latency &gt; 2s (payments)</div>
                   <div>│</div>
-                  <div>│ <span class="t-ph"style="color: var(--accent-1);">CROSS-DOMAIN INVESTIGATION</span> <span class="t-d">──</span>
+                  <div>│ <span class="t-ph" style="color: var(--accent-1);">CROSS-DOMAIN INVESTIGATION</span> <span
+                      class="t-d">──</span>
                   </div>
                   <div>│ ├─ <span class="t-b">SRE:</span> CPU spike on payments-*</div>
                   <div>│ ├─ <span class="t-b">Code:</span> Deploy #782 merged 12m ago</div>
@@ -592,7 +714,7 @@ display: contents;
             </div>
 
             <!-- Pane 3: Remediation -->
-            <div class="perf-pane" data-pane="3">
+            <div class="perf-pane desktop-active-tabs" data-pane="3">
               <div class="terminal-card">
                 <div
                   style="position:absolute;top:-60px;right:-60px;width:280px;height:280px;background:radial-gradient(circle,rgba(34,197,94,0.1),transparent 70%);pointer-events:none;">
@@ -602,7 +724,8 @@ display: contents;
                   <span class="terminal-title">arina — remediation-engine</span>
                 </div> -->
                 <div class="terminal-body">
-                  <div><span class="t-gh"style="color: var(--accent-1);">REMEDIATION ENGINE</span> <span class="t-d">─────────────</span>
+                  <div><span class="t-gh" style="color: var(--accent-1);">REMEDIATION ENGINE</span> <span
+                      class="t-d">─────────────</span>
                   </div>
                   <div>│</div>
                   <div>│ <span class="t-a">SRE:</span> Rollback deploy #782</div>
@@ -629,19 +752,20 @@ display: contents;
           </div><!-- /perf-tabs-content -->
         </div><!-- /perf-grid -->
       </div><!-- /alignment wrapper -->
-</section>
+    </section>
 
     <!-- SECURITY -->
     <section class="section section-center">
       <span class="badge "><span>›</span> ENTERPRISE-READY</span>
       <!-- <span class="section-label">Enterprise Ready</span> -->
       <h2 class="section-title">Built for Security and Scale</h2>
-      <p class="section-desc">Designed from the ground up for enterprise environments, Arina ensures your data stays yours, and governance controls for every ops team.</p>
+      <p class="section-desc">Designed from the ground up for enterprise environments, Arina ensures your data stays
+        yours, and governance controls for every ops team.</p>
 
       <div class="features-grid">
 
-     
-   <div class="feature-card">
+
+        <div class="feature-card">
           <div class="feature-icon"><img src="why_arina_iocns/30-plus integrations.png" height="35px" width="35px">
           </div>
           <h3>VPC Deployment</h3>
@@ -654,12 +778,13 @@ display: contents;
           <p>Read-only API access with per-domain approval gates. Each ops team configures its own remediation
             permissions independently.</p>
         </div>
-   <div class="feature-card">
+        <div class="feature-card">
           <div class="feature-icon"><img src="why_arina_iocns/fluctuation.png" height="35px" width="35px">
           </div>
           <h3>Multi-Domain <br>Correlation at Scale</h3>
           <p>
-Simultaneously correlates signals across observability, security, data pipelines, and ITSM in real time. No degradation whether you run 50 services or 5,000.</p>
+            Simultaneously correlates signals across observability, security, data pipelines, and ITSM in real time. No
+            degradation whether you run 50 services or 5,000.</p>
         </div>
 
 
@@ -724,7 +849,7 @@ Simultaneously correlates signals across observability, security, data pipelines
 
 
 
- <section class="smart-cta-hero">
+    <section class="smart-cta-hero">
 
       <div class="smart-cta-badge">
         <span class="badge"><span>›</span>Contact Us</span>
@@ -746,7 +871,7 @@ Simultaneously correlates signals across observability, security, data pipelines
     </section>
   </main>
 
-<?php include 'footer.php';?>
+  <?php include 'footer.php'; ?>
 
   <script>
     /* ── Arina AI Microsite — Vanilla JS ── */
@@ -877,7 +1002,7 @@ Simultaneously correlates signals across observability, security, data pipelines
 
     if (tabParam) {
       tabParam = tabParam.toLowerCase();
-      var foundIndex = dataProduct.findIndex(function(item) {
+      var foundIndex = dataProduct.findIndex(function (item) {
         var n = item.name.toLowerCase();
         if (tabParam === 'platform' && n.includes('platform')) return true;
         return n.replace(/\s+/g, '') === tabParam;
@@ -987,6 +1112,77 @@ Simultaneously correlates signals across observability, security, data pipelines
       // use case tabs initialized inline above
     });
 
+    // ---------- INITIAL STATE ----------
+    function handleInitialState() {
+      const isMobile = window.innerWidth <= 768;
+
+      const items = document.querySelectorAll('.perf-item');
+      const panes = document.querySelectorAll('.desktop-active-tabs');
+
+      // reset all
+      items.forEach(i => i.classList.remove('active'));
+      panes.forEach(p => p.classList.remove('active'));
+
+      if (!isMobile) {
+        // Desktop → open first tab
+        const firstItem = document.querySelector('.perf-item[data-tab="1"]');
+        const firstPane = document.querySelector('.desktop-active-tabs[data-pane="1"]');
+
+        if (firstItem) firstItem.classList.add('active');
+        if (firstPane) firstPane.classList.add('active');
+      }
+    }
+
+    // run on load
+    handleInitialState();
+
+    // run on resize
+    window.addEventListener('resize', handleInitialState);
+
+
+    // ---------- CLICK FUNCTION ----------
+    document.querySelectorAll('.perf-item').forEach(item => {
+      item.addEventListener('click', () => {
+
+        const tab = item.getAttribute('data-tab');
+        const isMobile = window.innerWidth <= 768;
+
+        if (isMobile) {
+          // MOBILE → toggle accordion
+          const isActive = item.classList.contains('active');
+
+          document.querySelectorAll('.perf-item').forEach(i => {
+            i.classList.remove('active');
+          });
+
+          if (!isActive) {
+            item.classList.add('active');
+          }
+
+        } else {
+          // DESKTOP → tab switch
+
+          document.querySelectorAll('.perf-item').forEach(i => {
+            i.classList.remove('active');
+          });
+
+          document.querySelectorAll('.desktop-active-tabs').forEach(p => {
+            p.classList.remove('active');
+          });
+
+          item.classList.add('active');
+
+          document
+            .querySelector(`.desktop-active-tabs[data-pane="${tab}"]`)
+            .classList.add('active');
+        }
+
+      });
+    });
+
+
+
+
   </script>
   <!-- <script>
     const items = document.querySelectorAll('.perf-item');
@@ -1012,21 +1208,21 @@ Simultaneously correlates signals across observability, security, data pipelines
     
   </script> -->
 
-<script>
+  <script>
     const items = document.querySelectorAll('.perf-item');
     const panes = document.querySelectorAll('.perf-pane');
 
     function setPerfTabsHeight() {
       const tabsContent = document.getElementById('tabContent');
       const firstPane = document.querySelector('.perf-pane[data-pane="1"]');
-      
+
       // Only apply JS height locking on desktop screens (>900px matching the grid break in CSS)
       if (window.innerWidth > 900) {
         if (tabsContent && firstPane) {
           // Temporarily remove max/min limits to get the true height if we resized
           tabsContent.style.minHeight = '';
           tabsContent.style.maxHeight = '';
-          
+
           const h = firstPane.offsetHeight;
           if (h > 0) {
             tabsContent.style.minHeight = h + 'px';
@@ -1069,34 +1265,34 @@ Simultaneously correlates signals across observability, security, data pipelines
 
   <script>
 
-const helpBoxes = document.querySelectorAll(".help-box");
+    const helpBoxes = document.querySelectorAll(".help-box");
 
-helpBoxes.forEach(box => {
+    helpBoxes.forEach(box => {
 
-box.addEventListener("click", () => {
+      box.addEventListener("click", () => {
 
-if(box.classList.contains("open")){
+        if (box.classList.contains("open")) {
 
-box.classList.remove("open");
-box.querySelector(".help-symbol").innerHTML = "+";
+          box.classList.remove("open");
+          box.querySelector(".help-symbol").innerHTML = "+";
 
-}else{
+        } else {
 
-helpBoxes.forEach(item=>{
-item.classList.remove("open");
-item.querySelector(".help-symbol").innerHTML = "+";
-});
+          helpBoxes.forEach(item => {
+            item.classList.remove("open");
+            item.querySelector(".help-symbol").innerHTML = "+";
+          });
 
-box.classList.add("open");
-box.querySelector(".help-symbol").innerHTML = "×";
+          box.classList.add("open");
+          box.querySelector(".help-symbol").innerHTML = "×";
 
-}
+        }
 
-});
+      });
 
-});
+    });
 
-</script>
+  </script>
 
 
 

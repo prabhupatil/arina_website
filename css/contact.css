@@ -1071,6 +1071,7 @@ body {
   font-weight: 600;
   color: var(--text-primary);
 }
+
 /* ── FOOTER ── */
 .footer {
   padding: 64px 48px 32px;
@@ -1114,7 +1115,7 @@ body {
 }
 
 .footer a:hover {
-  color:var(--text-muted);
+  color: var(--text-muted);
 }
 
 .footer-bottom {
@@ -1720,5 +1721,15 @@ body {
   .contact-info {
     padding-top: 8px;
     margin-top: -50px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 110% !important;
   }
 }
