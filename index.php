@@ -443,9 +443,9 @@
                 width: 70px;
             }
 
-            #container1 {
+            /* #container1 {
                 margin-top: -300px;
-            }
+            } */
 
             .dashboard-wrapper {
                 margin-top: -150px;
@@ -798,6 +798,14 @@
                 transform: none;
                 display: none;
             }
+        }
+
+        @media (min-width: 800px) and (max-width: 820px) {
+            .left {
+                width: 100%;
+                padding-left: 150px !important;
+            }
+
         }
 
         @media (max-width: 768px) {
@@ -1660,7 +1668,7 @@
 
         @media (min-width: 769px) {
             .concenter {
-                margin-right: 85px;
+                margin-right: auto;
             }
 
             .newtabs {
@@ -1677,7 +1685,7 @@
             flex-wrap: wrap;
             gap: 10px;
             padding-bottom: 50px;
-            width: 1000px;
+            width: auto;
 
         }
 
@@ -1961,7 +1969,7 @@
 
             .buttons {
                 display: block;
-                margin-top: -120px;
+                margin-top: -50px;
             }
 
             .dashboard-wrapper img {
@@ -2305,7 +2313,7 @@
       <div class="usecase-panel" id="usecase-panel"></div>
     </section> -->
 
-<section class="section">
+        <section class="section">
 
             <div class="section-header">
                 <span class="badge"><span>›</span> USE CASES</span>

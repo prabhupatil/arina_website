@@ -1579,19 +1579,20 @@ body {
 
     .platform-banner {
         display: block;
-        padding-left: 160px;
+        /* padding-left: 160px; */
     }
 
     .platform-banner h2 {
 
         text-align: center;
-        padding-right: 100px;
+        /* padding-right: 100px; */
 
     }
 
     .dashboard-wrapper img {
         margin-top: 150px;
     }
+
 
 }
 
@@ -1625,149 +1626,157 @@ body {
         margin-top: -50px;
     }
 
-    /* Large Mobile */
-    @media (max-width: 576px) {
-
-        .platform-ops-list {
-            display: block;
-        }
-
-        .platform-banner h2 {
-            text-align: center;
-            padding: 0;
-            font-size: 16px;
-        }
-
-        .platform-banner p {
-            font-size: 14px;
-        }
-
-
+    #container1 {
+        padding-top: 100px !important;
     }
 
-    /* Small Mobile (iPhone SE etc.) */
-    @media (max-width: 480px) {
-        .platform-ops-list {
-            display: block;
-
-        }
-
-        .platform-banner {
-            padding: 20px 20px;
-        }
-
+    .section1 {
+        padding: 100px 0px 100px !important;
     }
+}
 
-    /* Extra Small Mobile */
-    @media (max-width: 360px) {
-        .platform-ops-list {
-            display: block;
-            padding-top: 18px !important;
+/* Large Mobile */
+@media (max-width: 576px) {
 
-        }
-    }
-
-
-
-
-
-
-    .testimonial-ops-badge {
-        display: inline-block;
-        padding: 3px 10px;
-        border-radius: 6px;
-        font-size: 10px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 16px;
-        border: 1px solid;
-    }
-
-    /* ── FAQ ── */
-    .faq-list {
-        max-width: 760px;
-        margin: 48px auto 0;
-    }
-
-    .faq-item {
-        border-bottom: 1px solid var(--border);
-    }
-
-    .faq-question {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 24px 0;
-        background: none;
-        border: none;
-        color: var(--text-primary);
-        font-family: var(--font-body);
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        text-align: left;
-    }
-
-    .faq-question:hover {
-        color: var(--accent-1);
-    }
-
-    .faq-arrow {
-        font-size: 18px;
-        transition: transform 0.3s;
-        color: var(--text-muted);
-    }
-
-    .faq-arrow.open {
-        transform: rotate(45deg);
-    }
-
-    .faq-answer {
-        font-size: 14px;
-        color: var(--text-secondary);
-        line-height: 1.8;
-        padding-bottom: 24px;
-        display: none;
-    }
-
-    .faq-answer.open {
+    .platform-ops-list {
         display: block;
     }
 
-
-
-    /* Large Desktop / iMac */
-    @media (min-width: 1400px) {}
-
-    /* Desktop / MacBook */
-    @media (max-width: 1300px) {
-        .hero-content {
-            position: relative;
-
-            z-index: 2;
-            max-width: 900px;
-            margin: auto;
-        }
+    .platform-banner h2 {
+        text-align: center;
+        padding: 0;
+        font-size: 16px;
     }
 
-    /* Tablet (iPad) */
-    @media (max-width: 768px) {
-        #section {
-            padding: 0px 0px 50px !important;
-            margin-top: -200px !important;
-            z-index: 999;
-        }
+    .platform-banner p {
+        font-size: 14px;
     }
 
-    /* Large Mobile */
-    @media (max-width: 576px) {}
-
-    /* Small Mobile (iPhone SE etc.) */
-    @media (max-width: 480px) {}
-
-    /* Extra Small Mobile */
-    @media (max-width: 360px) {}
 
 }
+
+/* Small Mobile (iPhone SE etc.) */
+@media (max-width: 480px) {
+    .platform-ops-list {
+        display: block;
+
+    }
+
+    .platform-banner {
+        padding: 20px 20px;
+    }
+
+
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+    .platform-ops-list {
+        display: block;
+        padding-top: 18px !important;
+
+    }
+}
+
+
+
+
+
+
+.testimonial-ops-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    border: 1px solid;
+}
+
+/* ── FAQ ── */
+.faq-list {
+    max-width: 760px;
+    margin: 48px auto 0;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--border);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+}
+
+.faq-question:hover {
+    color: var(--accent-1);
+}
+
+.faq-arrow {
+    font-size: 18px;
+    transition: transform 0.3s;
+    color: var(--text-muted);
+}
+
+.faq-arrow.open {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    padding-bottom: 24px;
+    display: none;
+}
+
+.faq-answer.open {
+    display: block;
+}
+
+
+
+/* Large Desktop / iMac */
+@media (min-width: 1400px) {}
+
+/* Desktop / MacBook */
+@media (max-width: 1300px) {
+    .hero-content {
+        position: relative;
+
+        z-index: 2;
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+/* Tablet (iPad) */
+@media (max-width: 768px) {
+    #section {
+        padding: 0px 0px 50px !important;
+        margin-top: -200px !important;
+        z-index: 999;
+    }
+}
+
+/* Large Mobile */
+@media (max-width: 576px) {}
+
+/* Small Mobile (iPhone SE etc.) */
+@media (max-width: 480px) {}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {}
