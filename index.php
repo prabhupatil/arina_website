@@ -519,6 +519,11 @@
             font-size: clamp(28px, 4vw, 46px);
         }
 
+        .section-header h2 {
+            font-size: clamp(28px, 4vw, 46px);
+            padding
+        }
+
         .section-header p {
             color: var(--text-secondaryy);
             font-size: 16px;
@@ -851,6 +856,11 @@
 
             .section-header p {
                 font-size: 14px;
+            }
+
+            .section-header h2 {
+                font-size: clamp(28px, 4vw, 46px);
+                padding-bottom: 20px;
             }
 
             /* horizontal scroll tabs */
@@ -1969,7 +1979,7 @@
 
             .buttons {
                 display: block;
-                margin-top: -50px;
+                margin-top: -100px;
             }
 
             .dashboard-wrapper img {
@@ -2048,6 +2058,48 @@
             .one-platform-heading {
                 font-size: 28px;
             }
+        }
+
+        /* STICKY CONTENT */
+        .content-wrapper {
+            position: sticky;
+            top: 100px;
+            /* adjust based on header */
+        }
+
+        /* MOBILE TABS STICKY */
+        @media(max-width:768px) {
+            .tabs {
+                position: sticky;
+                top: 0;
+                z-index: 999;
+                background: #05070d;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px !important;
+                padding-left: initial !important;
+                padding: 10px !important;
+            }
+
+            .scroll-section {
+                height: 300vh;
+                /* depends on number of tabs */
+                position: relative;
+            }
+
+            .tabs .tab {
+                white-space: wrap;
+                line-height: 13px;
+            }
+
+            .card {
+                padding: 35px 25px;
+            }
+
+            .right {
+                padding-top: 80px;
+            }
+
         }
     </style>
 
@@ -2323,32 +2375,39 @@
                     unique workflows, signals, and priorities of every technology operations domain.</p>
             </div>
 
-            <div class="tabs newtabs tabs-responsive" id="tabs"></div>
 
-            <div class="content-wrapper concenter">
+            <div class="scroll-section">
 
-                <div class="left">
-                    <div class="left-icon">
-                        <img id="leftIcon">
+                <div class="tabs newtabs" id="tabs"></div>
+
+                <div class="content-wrapper concenter">
+                    <div class="left">
+                        <div class="left-icon">
+                            <img id="leftIcon">
+                        </div>
+
+                        <h2 id="title"></h2>
+                        <h4 id="subtitle"></h4>
+                        <p id="description"></p>
+                        <ul id="list"></ul>
                     </div>
 
-                    <h2 id="title"></h2>
-                    <h4 id="subtitle"></h4>
-                    <p id="description"></p>
-                    <ul id="list"></ul>
-                </div>
+                    <div class="right">
+                        <div class="card">
+                            <img id="cardIcon">
+                            <h3 id="stat"></h3>
+                            <p id="statText"></p>
+                            <p id="details"></p>
 
-                <div class="right">
-                    <div class="card">
-                        <img id="cardIcon">
-                        <h3 id="stat"></h3>
-                        <p id="statText"></p>
-                        <p id="details"></p>
-
+                        </div>
                     </div>
                 </div>
 
             </div>
+
+
+
+
         </section>
 
 
@@ -2881,40 +2940,52 @@
         loadContent(data[0]);
     </script>
 
+
     <script>
-        const storySteps = document.querySelectorAll(".story-step");
-        const progressBar = document.getElementById("storyProgress");
-        const timeline = document.querySelector(".story-timeline");
+        let currentTab = 0;
+        let isSwitching = false;
 
-        /* SECTION FADE */
+        window.addEventListener("scroll", function () {
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("active");
+            if (window.innerWidth > 768) return;
+
+            const section = document.querySelector(".scroll-section");
+            const left = document.querySelector(".left");
+
+            if (!section || !left) return;
+
+            const sectionRect = section.getBoundingClientRect();
+            const leftRect = left.getBoundingClientRect();
+
+            if (sectionRect.top > window.innerHeight || sectionRect.bottom < 0) return;
+
+            const isLeftEndReached = leftRect.bottom <= window.innerHeight + 5;
+
+            if (isLeftEndReached && !isSwitching) {
+
+                if (currentTab < data.length - 1) {
+
+                    isSwitching = true;
+
+                    currentTab++;
+
+                    loadContent(data[currentTab]);
+
+                    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+                    const tabs = document.querySelectorAll(".tab");
+                    if (tabs[currentTab]) tabs[currentTab].classList.add("active");
+
+                    // ❌ NO smooth scroll here
+
+                    setTimeout(() => {
+                        isSwitching = false;
+                    }, 300); // 🔥 reduced delay
                 }
-            });
-        }, {
-            threshold: .6
-        });
-
-        storySteps.forEach(step => observer.observe(step));
-
-        /* BLUE LINE SCROLL */
-
-        window.addEventListener("scroll", () => {
-
-            const timelineTop = timeline.offsetTop;
-            const timelineHeight = timeline.offsetHeight;
-
-            const scrollPosition = window.scrollY + window.innerHeight / 2 - timelineTop;
-
-            let progressHeight = Math.max(0, Math.min(scrollPosition, timelineHeight));
-
-            progressBar.style.height = progressHeight + "px";
+            }
 
         });
     </script>
+
 
 
 </body>

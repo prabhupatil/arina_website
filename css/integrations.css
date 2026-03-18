@@ -1203,9 +1203,8 @@ body {
 
   }
 
-  .about-hero {
-    height: 650px;
-  }
+  .about-hero
+  {height: 700px;}
 
   .hero h1 {
     letter-spacing: 1px;
